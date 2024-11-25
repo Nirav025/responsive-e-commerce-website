@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHRIJI Electronics</title>
+    <link rel="shortcut icon" href="Fevicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        legend {
+            padding: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        .btn2b {
+            display: none;
+        }
+
+
+        @media(max-width:1200px){
+            .btns {
+                display: none;
+            }
+
+            .btn2b{
+                display: block;
+            }
+        }
+
+
+           
+
+        @media(max-width:800px) {
+
+            .header {
+                width: 100%;
+                display: flex;
+                flex-shrink: 4;
+                justify-content: space-around;
+                background-image: linear-gradient(45deg, #E5AAC3, #F5F5F5);
+            }
+
+           
+            .logo {
+                margin: 0;
+                margin-left: 5px;
+                width: 80px;
+                height: 27px;
+
+            }
+
+            legend {
+                
+                background-image: linear-gradient(45deg, #D27BFF 10% , whitesmoke 90% );
+            }
+
+           
+
+            
+
+            .search-input {
+                /* margin-left: 30px; */
+                font-size: 14px;
+                /* width: 200px; */
+                width: 25vw;
+                /* height: 22px; */
+                height: 40px;
+                padding: 5px;
+                border: none;
+                border-left: 1px solid;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+
+
+
+            .search-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border: none;
+                border-right: 1px solid;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+            }
+
+            .fa-magnifying-glass {
+                font-size: 9px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            .btns {
+                display: none;
+            }
+
+            .btn2b {
+                margin: 0;
+                display: block;
+                font-size: 30px;
+            }
+
+
+
+            .productbar {
+                width: 100%;
+                text-align: justify;
+                height: fit-content;
+                flex-wrap: wrap;
+            }
+
+
+            .catagories {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                /* background-color: rgb(42, 40, 39); */
+                background-image: linear-gradient(45deg, whitesmoke 80%, #D09192);
+            }
+
+            .box {
+                border-radius: 10px;
+                background-image: linear-gradient(45deg, whitesmoke 70%, #18A5A7);
+                width: 40vw;
+
+            }
+
+
+
+
+
+            footer {
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            footer>ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+            }
+
+            .fcol {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .fa-linkedin {
+                margin-right: 0;
+            }
+
+
+
+
+            /* css for mail input section */
+
+
+            .mail {
+                display: flex;
+            }
+
+            .mail-input {
+                font-size: 6px;
+                width: 150px;
+                height: 20px;
+                padding: 5px;
+                border: none;
+                border-left: 1px solid;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+
+            .mail-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                background-color: white;
+                border: none;
+                border-right: 1px solid;
+                border-top: 1px solid;
+                border-bottom: 1px solid;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+
+            }
+
+            .fa-paper-plane {
+                font-size: 9px;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+
+            .fa-paper-plane:hover {
+                cursor: pointer;
+                transition: ease-in-out 0.2s;
+                transform: scale(1.3);
+            }
+
+            .item {
+                scale: 0.8;
+            }
+
+
+
+
+
+        }
+
+
+
+        @media(max-width:630px) {
+
+            .box {
+                width: 60vw;
+
+            }
+
+        }
+
+
+        @media(max-width:550px) {
+
+            .box {
+                width: 100vw;
+
+            }
+
+            
+        }
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+    <div class="header">
+
+        <div class="logo">
+            <img src="logo new png.png" alt="" class="logo">
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search For Products" class="search-input">
+            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <div class="btns">
+
+
+            <div class="btn">
+                <i class="fa-solid fa-check"></i>
+                <div class="btntext">Sevices</div>
+            </div>
+
+            <div class="btn">
+                <i class="fa-solid fa-truck"></i>
+                <div class="btntext">Track Order</div>
+            </div>
+
+            <div class="btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="btntext">Cart</div>
+            </div>
+
+            <div class="btn">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="btntext">Update Location</div>
+            </div>
+
+            <div class="btn">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <div class="btntext">Sign In</div>
+            </div>
+
+            <div class="btn"><i class="fa-solid fa-bars"></i></div>
+            
+        </div>
+
+        <div class="btn2b"><i class="fa-solid fa-bars"></i></div>
+
+
+
+
+    </div>
+
+
+
+
+    <div class="productbar">
+        <div class="product">SMARTPHONES</div>
+        <div class="product">TELEVISONS</div>
+        <div class="product">APPLE PRODUCTS</div>
+        <div class="product">LAPTOPS</div>
+        <div class="product">SMARTWATCHES & EARBUDS</div>
+        <div class="product">TABLETS</div>
+        <div class="product">REFRIGERATORS</div>
+        <div class="product">MICROWAVE OVENS</div>
+        <div class="product">AIR CONDITIONERS</div>
+        <div class="product">WASHING MACHINES</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <legend>SMARTPHONES</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item sp1"></div>
+            <div class="itemdescriotion">Samsung Galexy S Series</div>
+            <div class="offerprice">OFFER PRICE &#8377; 36,999</div>
+            <div class="mrp">MRP &#8377; 44,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item sp2"></div>
+            <div class="itemdescriotion">Xiaomi 14 Civi 5G</div>
+            <div class="offerprice">OFFER PRICE &#8377; 31,999</div>
+            <div class="mrp">MRP &#8377; 35,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item sp3"></div>
+            <div class="itemdescriotion">Vivo X Series</div>
+            <div class="offerprice">OFFER PRICE &#8377; 34,999</div>
+            <div class="mrp">MRP &#8377; 41,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item sp4"></div>
+            <div class="itemdescriotion">Redmi Note 13</div>
+            <div class="offerprice">OFFER PRICE &#8377; 33,999</div>
+            <div class="mrp">MRP &#8377; 37,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item sp5"></div>
+            <div class="itemdescriotion">Samsung Galexy A35 5G</div>
+            <div class="offerprice">OFFER PRICE &#8377; 41,999</div>
+            <div class="mrp">MRP &#8377; 45,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item sp6"></div>
+            <div class="itemdescriotion">Oneplus Nord CE4 Lite</div>
+            <div class="offerprice">OFFER PRICE &#8377; 38,999</div>
+            <div class="mrp">MRP &#8377; 43,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item sp7"></div>
+            <div class="itemdescriotion">Oneplus Nord 4 5G</div>
+            <div class="offerprice">OFFER PRICE &#8377; 48,999</div>
+            <div class="mrp">MRP &#8377; 51,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item sp8"></div>
+            <div class="itemdescriotion">Samsung Galexy S</div>
+            <div class="offerprice">OFFER PRICE &#8377; 37,999</div>
+            <div class="mrp">MRP &#8377; 43,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <legend>TELEVISONS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item tv1"></div>
+            <div class="itemdescriotion">LG 50 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 26,999</div>
+            <div class="mrp">MRP &#8377; 34,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tv2"></div>
+            <div class="itemdescriotion">Samsung 50 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 21,999</div>
+            <div class="mrp">MRP &#8377; 25,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item tv3"></div>
+            <div class="itemdescriotion">Sansui 43 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 34,999</div>
+            <div class="mrp">MRP &#8377; 41,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tv4"></div>
+            <div class="itemdescriotion">Sony 50 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 33,999</div>
+            <div class="mrp">MRP &#8377; 37,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item tv5"></div>
+            <div class="itemdescriotion">Sony 75 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 45,999</div>
+            <div class="mrp">MRP &#8377; 51,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tv6"></div>
+            <div class="itemdescriotion">Haier 43 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 35,999</div>
+            <div class="mrp">MRP &#8377; 41,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item tv7"></div>
+            <div class="itemdescriotion">LG 65 Inches</div>
+            <div class="offerprice">OFFER PRICE &#8377; 44,999</div>
+            <div class="mrp">MRP &#8377; 46,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tv8"></div>
+            <div class="itemdescriotion">Xiaomi 43 Inches Smart LED</div>
+            <div class="offerprice">OFFER PRICE &#8377; 57,999</div>
+            <div class="mrp">MRP &#8377; 63,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <legend>APPLE PRODUCTS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item ip1"></div>
+            <div class="itemdescriotion">Apple iPhone 16 Pro Max</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,46,999</div>
+            <div class="mrp">MRP &#8377; 1,54,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ip2"></div>
+            <div class="itemdescriotion">Apple iPhone 16 Pro Max</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,49,999</div>
+            <div class="mrp">MRP &#8377; 1,62,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item ip3"></div>
+            <div class="itemdescriotion">Apple iPhone 16</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,34,999</div>
+            <div class="mrp">MRP &#8377; 1,41,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ip4"></div>
+            <div class="itemdescriotion">Apple iPhone 15 Pro Max</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,33,999</div>
+            <div class="mrp">MRP &#8377; 1,37,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item ip5"></div>
+            <div class="itemdescriotion">Apple iPhone 14 Plus</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,45,999</div>
+            <div class="mrp">MRP &#8377; 1,51,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ip6"></div>
+            <div class="itemdescriotion">Apple iPhone 14</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,35,999</div>
+            <div class="mrp">MRP &#8377; 1,41,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item ip7"></div>
+            <div class="itemdescriotion">Apple iPhone 13</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,14,999</div>
+            <div class="mrp">MRP &#8377; 1,16,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ip8"></div>
+            <div class="itemdescriotion">Apple iPhone 11</div>
+            <div class="offerprice">OFFER PRICE &#8377; 57,999</div>
+            <div class="mrp">MRP &#8377; 63,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item ip9"></div>
+            <div class="itemdescriotion">Apple iPad Pro 2024</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,55,999</div>
+            <div class="mrp">MRP &#8377; 1,58,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ip10"></div>
+            <div class="itemdescriotion">Apple iPad Air 2024</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,51,999</div>
+            <div class="mrp">MRP &#8377; 1,61,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item ip11"></div>
+            <div class="itemdescriotion">Apple iPad 10th Generation</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,48,999</div>
+            <div class="mrp">MRP &#8377; 1,51,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ip12"></div>
+            <div class="itemdescriotion">Apple iPad Mini</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,27,999</div>
+            <div class="mrp">MRP &#8377; 1,33,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+    <legend>LAPTOPS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item lp1"></div>
+            <div class="itemdescriotion">Asus ROG Strix G16</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,60,999</div>
+            <div class="mrp">MRP &#8377; 1,64,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item lp2"></div>
+            <div class="itemdescriotion">Asus TUF F17 Gaming Laptop</div>
+            <div class="offerprice">OFFER PRICE &#8377; 2,21,999</div>
+            <div class="mrp">MRP &#8377; 2,25,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item lp3"></div>
+            <div class="itemdescriotion">Acer ALG Gaming laptop</div>
+            <div class="offerprice">OFFER PRICE &#8377; 2,34,999</div>
+            <div class="mrp">MRP &#8377; 2,41,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item lp4"></div>
+            <div class="itemdescriotion">Dell Inspiron 15</div>
+            <div class="offerprice">OFFER PRICE &#8377; 63,999</div>
+            <div class="mrp">MRP &#8377; 77,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item lp5"></div>
+            <div class="itemdescriotion">Asus Vivobook Go 14</div>
+            <div class="offerprice">OFFER PRICE &#8377; 75,999</div>
+            <div class="mrp">MRP &#8377; 81,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item lp6"></div>
+            <div class="itemdescriotion">Lenovo IdeadPad Slim 3</div>
+            <div class="offerprice">OFFER PRICE &#8377; 85,999</div>
+            <div class="mrp">MRP &#8377; 91,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item lp7"></div>
+            <div class="itemdescriotion">Acer Aspire Lite Laptop</div>
+            <div class="offerprice">OFFER PRICE &#8377; 94,999</div>
+            <div class="mrp">MRP &#8377; 96,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item lp8"></div>
+            <div class="itemdescriotion">HP 15 Laptop</div>
+            <div class="offerprice">OFFER PRICE &#8377; 77,999</div>
+            <div class="mrp">MRP &#8377; 83,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <legend>SMARTWATCHES & EARBUDS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item se1"></div>
+            <div class="itemdescriotion">Fire-Bolt Visionary</div>
+            <div class="offerprice">OFFER PRICE &#8377; 3,999</div>
+            <div class="mrp">MRP &#8377; 4,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item se2"></div>
+            <div class="itemdescriotion">Fire-Bolt Quest</div>
+            <div class="offerprice">OFFER PRICE &#8377; 6,999</div>
+            <div class="mrp">MRP &#8377; 7,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item se3"></div>
+            <div class="itemdescriotion">Noise NoiseFit</div>
+            <div class="offerprice">OFFER PRICE &#8377; 7,999</div>
+            <div class="mrp">MRP &#8377; 8,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item se4"></div>
+            <div class="itemdescriotion">BOAT wave convex</div>
+            <div class="offerprice">OFFER PRICE &#8377; 4,999</div>
+            <div class="mrp">MRP &#8377; 5,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item se5"></div>
+            <div class="itemdescriotion">Boat Earbuds</div>
+            <div class="offerprice">OFFER PRICE &#8377; 1,999</div>
+            <div class="mrp">MRP &#8377; 2,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item se6"></div>
+            <div class="itemdescriotion">Nothing Buds Pro 2</div>
+            <div class="offerprice">OFFER PRICE &#8377; 4,999</div>
+            <div class="mrp">MRP &#8377; 5,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item se7"></div>
+            <div class="itemdescriotion">OnePlus Nord Buds 2</div>
+            <div class="offerprice">OFFER PRICE &#8377; 2,999</div>
+            <div class="mrp">MRP &#8377; 3,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item se8"></div>
+            <div class="itemdescriotion">Sony WF-C500</div>
+            <div class="offerprice">OFFER PRICE &#8377; 2,999</div>
+            <div class="mrp">MRP &#8377; 3,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <legend>TABLETS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item tb1"></div>
+            <div class="itemdescriotion">Galexy Tab A9</div>
+            <div class="offerprice">OFFER PRICE &#8377; 22,999</div>
+            <div class="mrp">MRP &#8377; 23,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tb2"></div>
+            <div class="itemdescriotion">Galexy Tab S9 FE</div>
+            <div class="offerprice">OFFER PRICE &#8377; 26,999</div>
+            <div class="mrp">MRP &#8377; 27,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item tb3"></div>
+            <div class="itemdescriotion">One Plus Pad 2</div>
+            <div class="offerprice">OFFER PRICE &#8377; 27,999</div>
+            <div class="mrp">MRP &#8377; 28,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tb4"></div>
+            <div class="itemdescriotion">Redmi pad pro 5g</div>
+            <div class="offerprice">OFFER PRICE &#8377; 24,999</div>
+            <div class="mrp">MRP &#8377; 25,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item tb5"></div>
+            <div class="itemdescriotion">One Plus Tab Go</div>
+            <div class="offerprice">OFFER PRICE &#8377; 31,999</div>
+            <div class="mrp">MRP &#8377; 32,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tb6"></div>
+            <div class="itemdescriotion">Redmi Pad SE</div>
+            <div class="offerprice">OFFER PRICE &#8377; 24,999</div>
+            <div class="mrp">MRP &#8377; 25,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item tb7"></div>
+            <div class="itemdescriotion">Lenovo Tab M11</div>
+            <div class="offerprice">OFFER PRICE &#8377; 32,999</div>
+            <div class="mrp">MRP &#8377; 33,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item tb8"></div>
+            <div class="itemdescriotion">Lenovo Tab M10</div>
+            <div class="offerprice">OFFER PRICE &#8377; 22,999</div>
+            <div class="mrp">MRP &#8377; 23,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <legend>REFRIGERATORS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item rf1"></div>
+            <div class="itemdescriotion">Voltas 175 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 22,999</div>
+            <div class="mrp">MRP &#8377; 23,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item rf2"></div>
+            <div class="itemdescriotion">Whirlpool 270 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 26,999</div>
+            <div class="mrp">MRP &#8377; 27,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item rf3"></div>
+            <div class="itemdescriotion">Samsung 236 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 27,999</div>
+            <div class="mrp">MRP &#8377; 28,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item rf4"></div>
+            <div class="itemdescriotion">LG 592 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 24,999</div>
+            <div class="mrp">MRP &#8377; 25,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item rf5"></div>
+            <div class="itemdescriotion">Lloyd 92 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 31,999</div>
+            <div class="mrp">MRP &#8377; 32,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item rf6"></div>
+            <div class="itemdescriotion">Godrej 205 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 24,999</div>
+            <div class="mrp">MRP &#8377; 25,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item rf7"></div>
+            <div class="itemdescriotion">Bluestar 47 liters</div>
+            <div class="offerprice">OFFER PRICE &#8377; 32,999</div>
+            <div class="mrp">MRP &#8377; 33,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item rf8"></div>
+            <div class="itemdescriotion">Hair 190 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 22,999</div>
+            <div class="mrp">MRP &#8377; 23,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <legend>MICROWAVE OVENS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item mo1"></div>
+            <div class="itemdescriotion">IFB 20 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 5,999</div>
+            <div class="mrp">MRP &#8377; 6,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item mo2"></div>
+            <div class="itemdescriotion">LG 20 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 6,999</div>
+            <div class="mrp">MRP &#8377; 7,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item mo3"></div>
+            <div class="itemdescriotion">LG 25 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 7,999</div>
+            <div class="mrp">MRP &#8377; 8,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item mo4"></div>
+            <div class="itemdescriotion">Panasonic 20 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 6,999</div>
+            <div class="mrp">MRP &#8377; 7,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item mo5"></div>
+            <div class="itemdescriotion">Samsung 28 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 8,999</div>
+            <div class="mrp">MRP &#8377; 9,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item mo6"></div>
+            <div class="itemdescriotion">Faber 25 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 7,999</div>
+            <div class="mrp">MRP &#8377; 8,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item mo7"></div>
+            <div class="itemdescriotion">Haier 20 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 6,999</div>
+            <div class="mrp">MRP &#8377; 7,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item mo8"></div>
+            <div class="itemdescriotion">Samsung 21 Litres</div>
+            <div class="offerprice">OFFER PRICE &#8377; 5,999</div>
+            <div class="mrp">MRP &#8377; 6,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <legend>AIR CONDITIONERS</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item ac1"></div>
+            <div class="itemdescriotion">Panasonic 1.5 Ton</div>
+            <div class="offerprice">OFFER PRICE &#8377; 32,999</div>
+            <div class="mrp">MRP &#8377; 33,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ac2"></div>
+            <div class="itemdescriotion">Bluestar 1.5 Ton</div>
+            <div class="offerprice">OFFER PRICE &#8377; 36,999</div>
+            <div class="mrp">MRP &#8377; 37,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item ac3"></div>
+            <div class="itemdescriotion">Hitachi 3 Ton</div>
+            <div class="offerprice">OFFER PRICE &#8377; 37,999</div>
+            <div class="mrp">MRP &#8377; 38,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item ac4"></div>
+            <div class="itemdescriotion">LG 1.5 Ton</div>
+            <div class="offerprice">OFFER PRICE &#8377; 34,999</div>
+            <div class="mrp">MRP &#8377; 35,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <legend>WASHING MACHINES</legend>
+
+
+    <div class="catagories">
+
+        <div class="box">
+            <div class="item wm1"></div>
+            <div class="itemdescriotion">Bosch 8KG Fully Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 32,999</div>
+            <div class="mrp">MRP &#8377; 33,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item wm2"></div>
+            <div class="itemdescriotion">IFB 8.5 KG Fully Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 26,999</div>
+            <div class="mrp">MRP &#8377; 27,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item wm3"></div>
+            <div class="itemdescriotion">Vise 9 KG Fully Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 27,999</div>
+            <div class="mrp">MRP &#8377; 28,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item wm4"></div>
+            <div class="itemdescriotion">Samsung 7KG Fully Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 24,999</div>
+            <div class="mrp">MRP &#8377; 25,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item wm5"></div>
+            <div class="itemdescriotion">Whirlpool 9 KG Semi Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 21,999</div>
+            <div class="mrp">MRP &#8377; 22,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item wm6"></div>
+            <div class="itemdescriotion">Panasonics 8.5 KG Semi Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 24,999</div>
+            <div class="mrp">MRP &#8377; 25,999</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class="item wm7"></div>
+            <div class="itemdescriotion">Samsung 8.5 KG Semi Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 22,999</div>
+            <div class="mrp">MRP &#8377; 23,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+        <div class="box">
+            <div class=" item wm8"></div>
+            <div class="itemdescriotion">LG 8 KG Semi Automatic</div>
+            <div class="offerprice">OFFER PRICE &#8377; 22,999</div>
+            <div class="mrp">MRP &#8377; 23,499</div>
+            <div class="offeravilabe"><i class="fa-solid fa-tag"></i> OFFER AVAILABE</div>
+        </div>
+
+
+        <div class="view">
+            <div class="viewall">VIEW ALL</div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <ul>
+            <p class="footerhead">Useful Links</p>
+            <div class="footertext">HOME</div>
+            <div class="footertext">ABOUT US</div>
+            <div class="footertext">STORE LOCATER</div>
+            <div class="footertext">CAREERS</div>
+            <div class="footertext">CONTACT US</div>
+            <div class="footertext">BLOG</div>
+            <div class="footertext">GIFT VOUCHERS</div>
+            <div class="footertext">BECOME AN AFFILIATE</div>
+            <div class="footertext">E-WASTE</div>
+            <div class="footertext">BRAND STORES</div>
+
+        </ul>
+
+
+        <ul>
+            <p class="footerhead">Catagories</p>
+            <div class="footertext">SMARTPHONES</div>
+            <div class="footertext">TELEVISONS</div>
+            <div class="footertext">APPLE PRODUCTS</div>
+            <div class="footertext">LAPTOPS</div>
+            <div class="footertext">SMARTWATCHES & EARBUDS</div>
+            <div class="footertext">TABLETS</div>
+            <div class="footertext">REFRIGERATORS</div>
+            <div class="footertext">MICROWAVE OVENS</div>
+            <div class="footertext">AIR CONDITIONERS</div>
+            <div class="footertext">WASHING MACHINES</div>
+        </ul>
+
+
+
+        <ul>
+            <p class="footerhead">Stay In Touch With Us</p>
+
+            <div class="mail">
+                <input type="email" placeholder="Please Provide Your Emali Here" class="mail-input">
+                <div class="mail-icon"><i class="fa-regular fa-paper-plane"></i></div>
+            </div>
+
+
+            <!-- <div><p class="follow">Follow Us On</p></div> -->
+            <p class="follow">Follow Us On</p>
+            <div class="followicons"><i class="fa-brands fa-square-facebook"></i><i
+                    class="fa-brands fa-square-instagram"></i><i class="fa-brands fa-square-x-twitter"></i><i
+                    class="fa-brands fa-linkedin"></i></div>
+
+        </ul>
+    </footer>
+
+
+    <div class="last">
+        <div class="company"></div>
+        <div class="designby">Website Design & Devloped By Nirav</div>
+    </div>
+
+
+
+</body>
+
+</html>

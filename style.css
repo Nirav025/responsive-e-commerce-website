@@ -1,0 +1,798 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+    
+
+
+
+
+.header{
+    position: sticky;
+    top: 0;
+    height: 60px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+
+.logo{
+    margin-right: 20px;
+margin-left:10px;
+width:160px;
+height: 55px;
+
+}
+  
+
+.search{
+    display: flex;
+} 
+
+.search-input{
+    /* margin-left: 30px; */
+    font-size: 14px;
+    width: 400px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.fa-magnifying-glass{
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.fa-magnifying-glass:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.3);
+}
+
+.btns{
+ margin-left: 30px;
+ margin-right: 20px;
+ width: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ justify-content: space-around;
+ font-size: 14px;
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btntext{
+    margin-top: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    transform: scale(1.3);
+}
+
+.fa-bars{
+    font-size: 30px;
+}
+
+
+
+/* css for productbar */
+
+.productbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    color: white;
+    position: sticky;
+    top: 60px;
+    z-index: 3;
+}
+
+.product:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+
+/* css for iphone16 image */
+
+    
+
+
+
+
+
+
+
+
+/* css for main products section */
+
+
+.catagories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+.box{
+    font-size: 14px;
+    margin: 30px;
+    width: 20%;
+    height: 320px;
+    background-color: white;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box:hover{
+    transition: ease-in-out 0.1s;
+    transform: scale(0.9);
+    cursor: pointer;
+    box-shadow: 0PX 0PX 10PX gray,
+                0PX 0PX 20PX gray,
+                0PX 0PX 30PX gray,
+                0PX 0PX 40PX gray; 
+}
+
+.item{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.offerprice{
+    margin: 5px;
+    color: red;
+}
+
+.mrp{
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+
+.offeravilabe{
+    margin: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    color: green;
+}
+
+.fa-tag{
+    margin-right: 5px;
+}
+
+fieldset{
+    margin-top: 30px;
+}
+
+legend{
+    color: grey;
+    font-size: 25px;
+    margin: auto;
+}
+
+
+
+
+.view{
+    width: 100%;
+    margin-top:10px ;
+    margin-bottom:10px;
+}
+
+.viewall{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px gray;
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+}
+
+.viewall:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 10px gray;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* images for smartphones */
+ 
+.sp1{
+    background-image: url(sp1.jpg);
+}
+
+.sp2{
+    background-image: url(sp2.jpg);
+}
+
+.sp3{
+    background-image: url(sp3.jpg);
+}
+
+.sp4{
+    background-image: url(sp4.jpg);
+}
+
+.sp5{
+    background-image: url(sp5.jpg);
+}
+
+.sp6{
+    background-image: url(sp6.jpg);
+}
+
+.sp7{
+    background-image: url(sp7.jpg);
+}
+
+.sp8{
+    background-image: url(sp8.jpg);
+}
+
+
+
+
+/* images for televisions */
+
+.tv1{
+    background-image: url(tv1.jpg);
+}
+
+.tv2{
+    background-image: url(tv2.jpg);
+}
+
+.tv3{
+    background-image: url(tv3.jpg);
+}
+
+.tv4{
+    background-image: url(tv4.jpg);
+}
+
+.tv5{
+    background-image: url(tv5.jpg);
+}
+
+.tv6{
+    background-image: url(tv6.jpg);
+}
+
+.tv7{
+    background-image: url(tv7.jpg);
+}
+
+.tv8{
+    background-image: url(tv8.jpg);
+}
+
+
+
+
+/* images for apple products */
+
+.ip1{
+    background-image: url(ip1.jpg);
+}
+
+.ip2{
+    background-image: url(ip2.jpg);
+}
+
+.ip3{
+    background-image: url(ip3.jpg);
+}
+
+.ip4{
+    background-image: url(ip4.jpg);
+}
+
+.ip5{
+    background-image: url(ip5.jpg);
+}
+
+.ip6{
+    background-image: url(ip6.jpg);
+}
+
+.ip7{
+    background-image: url(ip7.jpg);
+}
+
+.ip8{
+    background-image: url(ip8.jpg);
+}
+
+.ip9{
+    background-image: url(ip9.jpg);
+}
+
+.ip10{
+    background-image: url(ip10.jpg);
+}
+
+.ip11{
+    background-image: url(ip11.jpg);
+}
+
+.ip12{
+    background-image: url(ip12.jpg);
+}
+
+
+
+/* images for laptops */
+
+.lp1{
+    background-image: url(lp1.jpg);
+}
+
+.lp2{
+    background-image: url(lp2.jpg);
+}
+
+.lp3{
+    background-image: url(lp3.jpg);
+}
+
+.lp4{
+    background-image: url(lp4.jpg);
+}
+
+.lp5{
+    background-image: url(lp5.jpg);
+}
+
+.lp6{
+    background-image: url(lp6.jpg);
+}
+
+.lp7{
+    background-image: url(lp7.jpg);
+}
+
+.lp8{
+    background-image: url(lp8.jpg);
+}
+
+
+
+ /* images for smartwatches & earbuds */
+
+ .se1{
+    background-image: url(se1.jpg);
+}
+
+.se2{
+    background-image: url(se2.jpg);
+}
+
+.se3{
+    background-image: url(se3.jpg);
+}
+
+.se4{
+    background-image: url(se4.jpg);
+}
+
+.se5{
+    background-image: url(se5.jpg);
+}
+
+.se6{
+    background-image: url(se6.jpg);
+}
+
+.se7{
+    background-image: url(se7.jpg);
+}
+
+.se8{
+    background-image: url(se8.jpg);
+}
+
+
+
+/* images for tablets */
+
+.tb1{
+    background-image: url(tb1.jpg);
+}
+
+.tb2{
+    background-image: url(tb2.jpg);
+}
+
+.tb3{
+    background-image: url(tb3.jpg);
+}
+
+.tb4{
+    background-image: url(tb4.jpg);
+}
+
+.tb5{
+    background-image: url(tb5.jpg);
+}
+
+.tb6{
+    background-image: url(tb6.jpg);
+}
+
+.tb7{
+    background-image: url(tb7.jpg);
+}
+
+.tb8{
+    background-image: url(tb8.jpg);
+}
+
+
+
+
+
+
+/* images for refrigerators */
+
+.rf1{
+    background-image: url(rf1.jpg);
+}
+
+.rf2{
+    background-image: url(rf2.jpg);
+}
+
+.rf3{
+    background-image: url(rf3.jpg);
+}
+
+.rf4{
+    background-image: url(rf4.jpg);
+}
+
+.rf5{
+    background-image: url(rf5.jpg);
+}
+
+.rf6{
+    background-image: url(rf6.jpg);
+}
+
+.rf7{
+    background-image: url(rf7.jpg);
+}
+
+.rf8{
+    background-image: url(rf8.jpg);
+}
+
+
+ /* images for microwave ovens */
+
+ .mo1{
+    background-image: url(mo1.jpg);
+}
+
+.mo2{
+    background-image: url(mo2.jpg);
+}
+
+.mo3{
+    background-image: url(mo3.jpg);
+}
+
+.mo4{
+    background-image: url(mo4.jpg);
+}
+
+.mo5{
+    background-image: url(mo5.jpg);
+}
+
+.mo6{
+    background-image: url(mo6.jpg);
+}
+
+.mo7{
+    background-image: url(mo7.jpg);
+}
+
+.mo8{
+    background-image: url(mo8.jpg);
+}
+
+
+
+ /* images for air conditioner */
+
+ .ac1{
+    background-image: url(ac1.jpg);
+}
+
+.ac2{
+    background-image: url(ac2.jpg);
+}
+
+.ac3{
+    background-image: url(ac3.jpg);
+}
+
+.ac4{
+    background-image: url(ac4.jpg);
+}
+
+
+
+ /* images for washing machinwm */
+
+ .wm1{
+    background-image: url(wm1.jpg);
+}
+
+.wm2{
+    background-image: url(wm2.jpg);
+}
+
+.wm3{
+    background-image: url(wm3.jpg);
+}
+
+.wm4{
+    background-image: url(wm4.jpg);
+}
+
+.wm5{
+    background-image: url(wm5.jpg);
+}
+
+.wm6{
+    background-image: url(wm6.jpg);
+}
+
+.wm7{
+    background-image: url(wm7.jpg);
+}
+
+.wm8{
+    background-image: url(wm8.jpg);
+}
+
+
+
+
+
+
+
+/* css for footer */
+
+
+footer{
+    /* margin-top: 50px; */
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    display: flex;
+    color: lightgrey;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+
+ul{
+    margin-top: 50px;
+}
+
+
+ul>p{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+}
+
+ul>div{
+    font-size: 13px;
+    margin-top: 7px;
+
+}
+
+ul>div:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+/* css for footer input */
+
+
+
+
+.mail{
+display: flex;
+} 
+
+.mail-input{
+font-size: 12px;
+width: 200px;
+height: 30px;
+padding: 10px;
+border: none;
+border-left: 1px solid;
+border-top: 1px solid;
+border-bottom: 1px solid;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+
+.mail-icon{
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+background-color: white;
+border: none;
+border-right: 1px solid;
+border-top: 1px solid;
+border-bottom: 1px solid;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+
+}
+
+.fa-paper-plane{
+font-size: 12px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+.fa-paper-plane:hover{
+cursor: pointer;
+transition: ease-in-out 0.2s;
+transform: scale(1.3);
+}
+
+
+
+/* css for follow us section */
+.follow{
+font-weight: 700;
+font-size: 18px;
+margin-bottom: 20px;
+margin-top: 50px;
+}
+
+.fa-square-facebook{
+font-size: 30px;
+color: white;
+margin-right: 20px;
+}
+
+
+.fa-square-instagram{
+font-size: 30px;
+color: white;
+margin-right: 20px;
+}
+
+
+.fa-square-x-twitter{
+font-size: 30px;
+color: white;
+margin-right: 20px;
+}
+
+
+.fa-linkedin{
+font-size: 30px;
+color: white;
+margin-right: 20px;
+}
+
+
+/* css for last company name */
+
+.last{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.company{
+    background-image: url(logo\ new\ png.png);
+    width: 120px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: invert(4);
+}
+
+.designby{
+    margin-top: 20px;
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
