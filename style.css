@@ -261,35 +261,36 @@ legend{
 /* images for smartphones */
  
 .sp1{
-    background-image: url(sp1.jpg);
+    /* background-image: url(.sp1.jpg); */
+    background-image: url(/img/sp1.jpg);
 }
 
 .sp2{
-    background-image: url(sp2.jpg);
+    background-image: url(/img/sp2.jpg);
 }
 
 .sp3{
-    background-image: url(sp3.jpg);
+    background-image: url(/img/sp3.jpg);
 }
 
 .sp4{
-    background-image: url(sp4.jpg);
+    background-image: url(/img/sp4.jpg);
 }
 
 .sp5{
-    background-image: url(sp5.jpg);
+    background-image: url(/img/sp5.jpg);
 }
 
 .sp6{
-    background-image: url(sp6.jpg);
+    background-image: url(/img/sp6.jpg);
 }
 
 .sp7{
-    background-image: url(sp7.jpg);
+    background-image: url(/img/sp7.jpg);
 }
 
 .sp8{
-    background-image: url(sp8.jpg);
+    background-image: url(/img/sp8.jpg);
 }
 
 
@@ -298,35 +299,35 @@ legend{
 /* images for televisions */
 
 .tv1{
-    background-image: url(tv1.jpg);
+    background-image: url(/img/tv1.jpg);
 }
 
 .tv2{
-    background-image: url(tv2.jpg);
+    background-image: url(/img/tv2.jpg);
 }
 
 .tv3{
-    background-image: url(tv3.jpg);
+    background-image: url(/img/tv3.jpg);
 }
 
 .tv4{
-    background-image: url(tv4.jpg);
+    background-image: url(/img/tv4.jpg);
 }
 
 .tv5{
-    background-image: url(tv5.jpg);
+    background-image: url(/img/tv5.jpg);
 }
 
 .tv6{
-    background-image: url(tv6.jpg);
+    background-image: url(/img/tv6.jpg);
 }
 
 .tv7{
-    background-image: url(tv7.jpg);
+    background-image: url(/img/tv7.jpg);
 }
 
 .tv8{
-    background-image: url(tv8.jpg);
+    background-image: url(/img/tv8.jpg);
 }
 
 
@@ -335,51 +336,51 @@ legend{
 /* images for apple products */
 
 .ip1{
-    background-image: url(ip1.jpg);
+    background-image: url(/img/ip1.jpg);
 }
 
 .ip2{
-    background-image: url(ip2.jpg);
+    background-image: url(/img/ip2.jpg);
 }
 
 .ip3{
-    background-image: url(ip3.jpg);
+    background-image: url(/img/ip3.jpg);
 }
 
 .ip4{
-    background-image: url(ip4.jpg);
+    background-image: url(/img/ip4.jpg);
 }
 
 .ip5{
-    background-image: url(ip5.jpg);
+    background-image: url(/img/ip5.jpg);
 }
 
 .ip6{
-    background-image: url(ip6.jpg);
+    background-image: url(/img/ip6.jpg);
 }
 
 .ip7{
-    background-image: url(ip7.jpg);
+    background-image: url(/img/ip7.jpg);
 }
 
 .ip8{
-    background-image: url(ip8.jpg);
+    background-image: url(/img/ip8.jpg);
 }
 
 .ip9{
-    background-image: url(ip9.jpg);
+    background-image: url(/img/ip9.jpg);
 }
 
 .ip10{
-    background-image: url(ip10.jpg);
+    background-image: url(/img/ip10.jpg);
 }
 
 .ip11{
-    background-image: url(ip11.jpg);
+    background-image: url(/img/ip11.jpg);
 }
 
 .ip12{
-    background-image: url(ip12.jpg);
+    background-image: url(/img/ip12.jpg);
 }
 
 
@@ -387,35 +388,35 @@ legend{
 /* images for laptops */
 
 .lp1{
-    background-image: url(lp1.jpg);
+    background-image: url(/img/lp1.jpg);
 }
 
 .lp2{
-    background-image: url(lp2.jpg);
+    background-image: url(/img/lp2.jpg);
 }
 
 .lp3{
-    background-image: url(lp3.jpg);
+    background-image: url(/img/lp3.jpg);
 }
 
 .lp4{
-    background-image: url(lp4.jpg);
+    background-image: url(/img/lp4.jpg);
 }
 
 .lp5{
-    background-image: url(lp5.jpg);
+    background-image: url(/img/lp5.jpg);
 }
 
 .lp6{
-    background-image: url(lp6.jpg);
+    background-image: url(/img/lp6.jpg);
 }
 
 .lp7{
-    background-image: url(lp7.jpg);
+    background-image: url(/img/lp7.jpg);
 }
 
 .lp8{
-    background-image: url(lp8.jpg);
+    background-image: url(/img/lp8.jpg);
 }
 
 
@@ -423,35 +424,35 @@ legend{
  /* images for smartwatches & earbuds */
 
  .se1{
-    background-image: url(se1.jpg);
+    background-image: url(/img/se1.jpg);
 }
 
 .se2{
-    background-image: url(se2.jpg);
+    background-image: url(/img/se2.jpg);
 }
 
 .se3{
-    background-image: url(se3.jpg);
+    background-image: url(/img/se3.jpg);
 }
 
 .se4{
-    background-image: url(se4.jpg);
+    background-image: url(/img/se4.jpg);
 }
 
 .se5{
-    background-image: url(se5.jpg);
+    background-image: url(/img/se5.jpg);
 }
 
 .se6{
-    background-image: url(se6.jpg);
+    background-image: url(/img/se6.jpg);
 }
 
 .se7{
-    background-image: url(se7.jpg);
+    background-image: url(/img/se7.jpg);
 }
 
 .se8{
-    background-image: url(se8.jpg);
+    background-image: url(/img/se8.jpg);
 }
 
 
@@ -459,35 +460,35 @@ legend{
 /* images for tablets */
 
 .tb1{
-    background-image: url(tb1.jpg);
+    background-image: url(/img/tb1.jpg);
 }
 
 .tb2{
-    background-image: url(tb2.jpg);
+    background-image: url(/img/tb2.jpg);
 }
 
 .tb3{
-    background-image: url(tb3.jpg);
+    background-image: url(/img/tb3.jpg);
 }
 
 .tb4{
-    background-image: url(tb4.jpg);
+    background-image: url(/img/tb4.jpg);
 }
 
 .tb5{
-    background-image: url(tb5.jpg);
+    background-image: url(/img/tb5.jpg);
 }
 
 .tb6{
-    background-image: url(tb6.jpg);
+    background-image: url(/img/tb6.jpg);
 }
 
 .tb7{
-    background-image: url(tb7.jpg);
+    background-image: url(/img/tb7.jpg);
 }
 
 .tb8{
-    background-image: url(tb8.jpg);
+    background-image: url(/img/tb8.jpg);
 }
 
 
@@ -498,70 +499,70 @@ legend{
 /* images for refrigerators */
 
 .rf1{
-    background-image: url(rf1.jpg);
+    background-image: url(/img/rf1.jpg);
 }
 
 .rf2{
-    background-image: url(rf2.jpg);
+    background-image: url(/img/rf2.jpg);
 }
 
 .rf3{
-    background-image: url(rf3.jpg);
+    background-image: url(/img/rf3.jpg);
 }
 
 .rf4{
-    background-image: url(rf4.jpg);
+    background-image: url(/img/rf4.jpg);
 }
 
 .rf5{
-    background-image: url(rf5.jpg);
+    background-image: url(/img/rf5.jpg);
 }
 
 .rf6{
-    background-image: url(rf6.jpg);
+    background-image: url(/img/rf6.jpg);
 }
 
 .rf7{
-    background-image: url(rf7.jpg);
+    background-image: url(/img/rf7.jpg);
 }
 
 .rf8{
-    background-image: url(rf8.jpg);
+    background-image: url(/img/rf8.jpg);
 }
 
 
  /* images for microwave ovens */
 
  .mo1{
-    background-image: url(mo1.jpg);
+    background-image: url(/img/mo1.jpg);
 }
 
 .mo2{
-    background-image: url(mo2.jpg);
+    background-image: url(/img/mo2.jpg);
 }
 
 .mo3{
-    background-image: url(mo3.jpg);
+    background-image: url(/img/mo3.jpg);
 }
 
 .mo4{
-    background-image: url(mo4.jpg);
+    background-image: url(/img/mo4.jpg);
 }
 
 .mo5{
-    background-image: url(mo5.jpg);
+    background-image: url(/img/mo5.jpg);
 }
 
 .mo6{
-    background-image: url(mo6.jpg);
+    background-image: url(/img/mo6.jpg);
 }
 
 .mo7{
-    background-image: url(mo7.jpg);
+    background-image: url(/img/mo7.jpg);
 }
 
 .mo8{
-    background-image: url(mo8.jpg);
+    background-image: url(/img/mo8.jpg);
 }
 
 
@@ -569,19 +570,19 @@ legend{
  /* images for air conditioner */
 
  .ac1{
-    background-image: url(ac1.jpg);
+    background-image: url(/img/ac1.jpg);
 }
 
 .ac2{
-    background-image: url(ac2.jpg);
+    background-image: url(/img/ac2.jpg);
 }
 
 .ac3{
-    background-image: url(ac3.jpg);
+    background-image: url(/img/ac3.jpg);
 }
 
 .ac4{
-    background-image: url(ac4.jpg);
+    background-image: url(/img/ac4.jpg);
 }
 
 
@@ -589,35 +590,35 @@ legend{
  /* images for washing machinwm */
 
  .wm1{
-    background-image: url(wm1.jpg);
+    background-image: url(/img/wm1.jpg);
 }
 
 .wm2{
-    background-image: url(wm2.jpg);
+    background-image: url(/img/wm2.jpg);
 }
 
 .wm3{
-    background-image: url(wm3.jpg);
+    background-image: url(/img/wm3.jpg);
 }
 
 .wm4{
-    background-image: url(wm4.jpg);
+    background-image: url(/img/wm4.jpg);
 }
 
 .wm5{
-    background-image: url(wm5.jpg);
+    background-image: url(/img/wm5.jpg);
 }
 
 .wm6{
-    background-image: url(wm6.jpg);
+    background-image: url(/img/wm6.jpg);
 }
 
 .wm7{
-    background-image: url(wm7.jpg);
+    background-image: url(/img/wm7.jpg);
 }
 
 .wm8{
-    background-image: url(wm8.jpg);
+    background-image: url(/img/wm8.jpg);
 }
 
 
